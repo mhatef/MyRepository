@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pig Game </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="deleteAllCookies()">
+    <div id="total">
+        <div id="header">
+            <h1> Pig Game </h1>
+        </div>
+
+        <p style="font-size:25px;"> Welcome To Pig Game</p>
+        
+        <p> Insert Your Names And Enjoy The Game Or Read <a id="rule" href="./GamePage.html">Rules</a> </p>
+        <div id="input">
+            <p> First Player Name : <input type="text" id="fname" name="FirstName" placeholder=" First Player Name..."></p>
+            <p> Second Player Name : <input type="text" id="sname" name="SecondName" placeholder=" Second Player Name..."></p>
+        </div>
+        <br>
+
+        <button id="subname" type="button" onclick="test()"> Submit Names </button>
+
+        <a id="sublink"  href="./index.html">Start Game </a>
+        <br>
+        
+        <p style="font-size: 12px;"> © Shemshad.co All rights reserved </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

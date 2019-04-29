@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pig Game </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="submit()">
+    <div id="total">
+        <div id="header">
+            <h1> Pig Game </h1>
+        </div>
+        <div id="firstbox" style="border: 5px solid #ff66ff;">
+            <h3 id="fpn"> First User </h3>
+            <p> Total Score Is : <span id="firstuserscore">0</span></p>
+            <br>
+            <p> Correct Score Is : <span id="firstcorrectscore">0</span> </p>
+        </div>
+        <div id="secondbox" style="border: 5px solid #ff66ff;">
+            <h3 id="spn"> Second User </h3>
+            <p> Total Score Is : <span id="seconduserscore">0</span></p>
+            <br>
+            <p> Correct Score Is : <span id="secondcorrectscore">0</span> </p>
+        </div>
+         <br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="dicenum">
+            <p> Dices Number is : <span id="dicenumber"></span> <img id="Dice1" src="./Images/Dice.gif" alt=" " style="width:55px;height:30px;"> <img id="Dice2" src="" alt="" style="width:0px;height:0px;"></p>
+        </div> 
+        <div id="maxscore">
+            <p>Enter Win Score To Start Game </p>
+            <p> Win Score : <input id="max" type="number" > </p> 
+        </div>
+        
+       <button id="submax" type="button" onclick="submax()" style="cursor:pointer">Submit Win Score</button>
+        <div id="btn">
+            <input type="button" id="dicebtn" onclick="dicebtn()" value="Dice" style="cursor: pointer">
+
+            <input type="button" id="holdbtn" onclick="holdfunction()" value="Hold On" style="cursor: pointer"> 
+        </div>
+            <div id="winbox">
+
+            </div>
+
+        <p style="font-size: 12px;"> © Shemshad.co All rights reserved </p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
